@@ -5,7 +5,7 @@
 ### Compile
 
 ```bash
-g++ src/*.cpp src/*.h -o out/main
+g++  src/*.cpp src/*.h -o out/main -fopenmp
 ```
 
 ### Execute

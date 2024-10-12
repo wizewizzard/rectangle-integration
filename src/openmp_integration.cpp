@@ -36,5 +36,6 @@ IntegrationResult rectangle_integration_openmp(double (*func)(double), double a,
 {
 
     double result = rectangle_integration(func, a, b, n);
+    omp_set_num_threads(config.threadsNum);
     return {result};
 }
